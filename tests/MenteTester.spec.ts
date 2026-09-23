@@ -8,7 +8,8 @@ test('la página principal de Mente Tester carga correctamente', async ({ page }
 
 	await expect(page).toHaveTitle(/Mente Tester/);
 	await expect(page.getByRole('heading', { name: 'De 0 a QA en 6 meses' })).toBeVisible();
-	await expect(menteTester.programsLink).toBeVisible();
+	//await expect(page.getByText(/programas/i)).toBeVisible();
+    await expect(page.getByRole('button', { name: 'menu' })).toBeVisible();
 });
 
 test('el enlace de WhatsApp funciona correctamente', async ({ page }) => {

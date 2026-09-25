@@ -1,0 +1,61 @@
+{
+  "baseUrl": "https://mentetester.com",
+  "tests": [
+    {
+      "name": "Pagina principal",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedText": "De 0 a QA en 6 meses"
+    },
+    {
+      "name": "Programas educativos",
+      "method": "GET",
+      "path": "/programas",
+      "expectedStatus": 200,
+      "expectedText": "Programas"
+    },
+    {
+      "name": "Practica guiada",
+      "method": "GET",
+      "path": "/practica-guiada",
+      "expectedStatus": 200,
+      "expectedText": "Practica guiada"
+    },
+    {
+      "name": "Guia de temario",
+      "method": "GET",
+      "path": "/temario",
+      "expectedStatus": 200,
+      "expectedText": "temario"
+    },
+    {
+      "name": "Sobre nosotros",
+      "method": "GET",
+      "path": "/nosotros",
+      "expectedStatus": 200,
+      "expectedText": "Sobre nosotros"
+    },
+    {
+      "name": "Testimonios",
+      "method": "GET",
+      "path": "/testimonios",
+      "expectedStatus": 200,
+      "expectedText": "Testimonios"
+    },
+    {
+      "name": "Preguntas frecuentes",
+      "method": "GET",
+      "path": "/preguntas",
+      "expectedStatus": 200,
+      "expectedText": "Preguntas"
+    },
+    {
+      "name": "Clase gratis",
+      "method": "GET",
+      "path": "/clase-gratis",
+      "expectedStatus": 200,
+      "expectedText": "Clase gratis"
+    }
+  ]
+}

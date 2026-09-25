@@ -29,7 +29,10 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Run Mente Tester tests
-        run: xvfb-run --auto-servernum npx playwright test tests/MenteTester.spec.ts --project=chromium
+        run: >-
+          xvfb-run --auto-servernum npx playwright test
+          tests/MenteTester.spec.ts tests/MenteTesterApi.spec.ts
+          --project=chromium
 
       - name: Upload Playwright report
         if: always()
